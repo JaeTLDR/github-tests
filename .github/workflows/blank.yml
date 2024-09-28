@@ -14,7 +14,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          google-chrome --headless --disable-gpu --print-to-pdf=test.pdf --no-pdf-header-footer --virtual-time-budget=5000 'https://stratigraphy.org/chart-data/'
+          google-chrome --headless --disable-gpu --print-to-pdf=test.pdf --no-pdf-header-footer --virtual-time-budget=5000 'https://stratigraphy.org/chart-data/?scale=log'
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.2.1-node20
         with:
